@@ -1,0 +1,29 @@
+version: "3.8"
+name: onlyoffice-sha256-demo
+
+services:
+  onlyoffice-document-server:
+    container_name: onlyoffice-sha256-demo-onlyoffice-document-server
+    image: onlyoffice/documentserver-de:7.5.1.1
+    environment:
+    - JWT_HEADER=Authorization
+    - JWT_SECRET=secret
+
+  server:
+    container_name: onlyoffice-sha256-demo-server
+    image: node:21.5.0-alpine3.18
+    volumes:
+    - ./testdata:/srv/testdata
+    - ./main.js:/srv/main.js
+    - ./package.json:/srv/package.json
+    ports:
+    - 3000:3000
+    working_dir: /srv
+    command: ["node", "main.js"]
+    environment:
+    - DOCUMENT_SERVER_BASE_URL=http://onlyoffice-document-server/
+    - SERVER_BASE_URL=http://server:3000/
+    - SERVER_HOSTNAME=0.0.0.0
+    - SERVER_JWT_HEADER=Authorization
+    - SERVER_JWT_SECRET=secret
+    - SERVER_PORT=3000

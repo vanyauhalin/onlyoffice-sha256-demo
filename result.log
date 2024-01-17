@@ -1,0 +1,89 @@
+onlyoffice-sha256-demo-server                      | When the Document Server is ready, run the following command.
+onlyoffice-sha256-demo-server                      |
+onlyoffice-sha256-demo-server                      |   curl http://localhost:3000/start
+onlyoffice-sha256-demo-server                      |
+onlyoffice-sha256-demo-onlyoffice-document-server  |  * Starting PostgreSQL 14 database server
+onlyoffice-sha256-demo-onlyoffice-document-server  |    ...done.
+onlyoffice-sha256-demo-onlyoffice-document-server  |  * Starting RabbitMQ Messaging Server rabbitmq-server
+onlyoffice-sha256-demo-onlyoffice-document-server  |    ...done.
+onlyoffice-sha256-demo-onlyoffice-document-server  | Starting redis-server: redis-server.
+onlyoffice-sha256-demo-onlyoffice-document-server  | psql:/var/www/onlyoffice/documentserver/server/schema/postgresql/removetbl.sql:4: NOTICE:  table "doc_callbacks" does not exist, skipping
+onlyoffice-sha256-demo-onlyoffice-document-server  | psql:/var/www/onlyoffice/documentserver/server/schema/postgresql/removetbl.sql:9: NOTICE:  function merge_db(pg_catalog.varchar,int2,int8,pg_catalog.timestamp,pg_catalog.varchar,int8,int8) does not exist, skipping
+onlyoffice-sha256-demo-onlyoffice-document-server  | psql:/var/www/onlyoffice/documentserver/server/schema/postgresql/removetbl.sql:10: NOTICE:  function merge_db(pg_catalog.varchar,int2,int4,pg_catalog.timestamp,pg_catalog.varchar,int4,int4) does not exist, skipping
+onlyoffice-sha256-demo-onlyoffice-document-server  | psql:/var/www/onlyoffice/documentserver/server/schema/postgresql/removetbl.sql:11: NOTICE:  function merge_db(pg_catalog.varchar,int2,int4,pg_catalog.timestamp,int4,int4,text,text) does not exist, skipping
+onlyoffice-sha256-demo-onlyoffice-document-server  | Starting supervisor: supervisord.
+onlyoffice-sha256-demo-onlyoffice-document-server  | cron: unrecognized service
+onlyoffice-sha256-demo-onlyoffice-document-server  |  * Starting nginx nginx
+onlyoffice-sha256-demo-onlyoffice-document-server  |    ...done.
+onlyoffice-sha256-demo-onlyoffice-document-server  | Generating AllFonts.js, please wait...Done
+onlyoffice-sha256-demo-onlyoffice-document-server  | Generating presentation themes, please wait...Done
+onlyoffice-sha256-demo-onlyoffice-document-server  | Generating js caches, please wait...Done
+onlyoffice-sha256-demo-onlyoffice-document-server  | ds:docservice: stopped
+onlyoffice-sha256-demo-onlyoffice-document-server  | ds:docservice: started
+onlyoffice-sha256-demo-onlyoffice-document-server  | ds:converter: stopped
+onlyoffice-sha256-demo-onlyoffice-document-server  | ds:converter: started
+onlyoffice-sha256-demo-onlyoffice-document-server  |  * Reloading nginx configuration nginx
+onlyoffice-sha256-demo-onlyoffice-document-server  |    ...done.
+onlyoffice-sha256-demo-onlyoffice-document-server  |
+onlyoffice-sha256-demo-onlyoffice-document-server  | ==> /var/log/onlyoffice/documentserver/converter/err.log <==
+onlyoffice-sha256-demo-onlyoffice-document-server  |
+onlyoffice-sha256-demo-onlyoffice-document-server  | ==> /var/log/onlyoffice/documentserver/converter/out.log <==
+onlyoffice-sha256-demo-onlyoffice-document-server  |   code: 'ENOENT',
+onlyoffice-sha256-demo-onlyoffice-document-server  |   syscall: 'open',
+onlyoffice-sha256-demo-onlyoffice-document-server  |   path: '/var/www/onlyoffice/documentserver/../Data/license.lic'
+onlyoffice-sha256-demo-onlyoffice-document-server  | }
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:12.455] [WARN] [localhost] [docId] [userId] nodeJS - update cluster with 4 workers
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:12.461] [WARN] [localhost] [docId] [userId] nodeJS - worker 795 started.
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:12.465] [WARN] [localhost] [docId] [userId] nodeJS - worker 796 started.
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:12.469] [WARN] [localhost] [docId] [userId] nodeJS - worker 802 started.
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:12.472] [WARN] [localhost] [docId] [userId] nodeJS - worker 808 started.
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:12.473] [WARN] [localhost] [docId] [userId] nodeJS - update cluster with 4 workers
+onlyoffice-sha256-demo-onlyoffice-document-server  |
+onlyoffice-sha256-demo-onlyoffice-document-server  | ==> /var/log/onlyoffice/documentserver/docservice/err.log <==
+onlyoffice-sha256-demo-onlyoffice-document-server  |
+onlyoffice-sha256-demo-onlyoffice-document-server  | ==> /var/log/onlyoffice/documentserver/docservice/out.log <==
+onlyoffice-sha256-demo-onlyoffice-document-server  |   syscall: 'open',
+onlyoffice-sha256-demo-onlyoffice-document-server  |   path: '/var/www/onlyoffice/documentserver/../Data/license.lic'
+onlyoffice-sha256-demo-onlyoffice-document-server  | }
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:10.703] [WARN] [localhost] [docId] [userId] nodeJS - [Error: ENOENT: no such file or directory, open '/var/www/onlyoffice/documentserver/../Data/license.lic'] {
+onlyoffice-sha256-demo-onlyoffice-document-server  |   errno: -2,
+onlyoffice-sha256-demo-onlyoffice-document-server  |   code: 'ENOENT',
+onlyoffice-sha256-demo-onlyoffice-document-server  |   syscall: 'open',
+onlyoffice-sha256-demo-onlyoffice-document-server  |   path: '/var/www/onlyoffice/documentserver/../Data/license.lic'
+onlyoffice-sha256-demo-onlyoffice-document-server  | }
+onlyoffice-sha256-demo-onlyoffice-document-server  | [2024-01-17T08:01:10.793] [WARN] [localhost] [docId] [userId] nodeJS - Express server listening on port 8000 in production-linux mode. Version: 7.5.1. Build: 23
+onlyoffice-sha256-demo-onlyoffice-document-server  |
+onlyoffice-sha256-demo-onlyoffice-document-server  | ==> /var/log/onlyoffice/documentserver/metrics/err.log <==
+onlyoffice-sha256-demo-onlyoffice-document-server  |
+onlyoffice-sha256-demo-onlyoffice-document-server  | ==> /var/log/onlyoffice/documentserver/metrics/out.log <==
+onlyoffice-sha256-demo-onlyoffice-document-server  | 17 Jan 08:00:52 - [613] reading config file: ./config/config.js
+onlyoffice-sha256-demo-onlyoffice-document-server  | 17 Jan 08:00:52 - server is up INFO
+onlyoffice-sha256-demo-onlyoffice-document-server  |
+onlyoffice-sha256-demo-onlyoffice-document-server  | ==> /var/log/onlyoffice/documentserver/nginx.error.log <==
+onlyoffice-sha256-demo-server                      | Start with the following env variables.
+onlyoffice-sha256-demo-server                      | DOCUMENT_SERVER_BASE_URL http://onlyoffice-document-server/
+onlyoffice-sha256-demo-server                      | SERVER_BASE_URL http://server:3000/
+onlyoffice-sha256-demo-server                      | SERVER_PORT 3000
+onlyoffice-sha256-demo-server                      | SERVER_JWT_HEADER Authorization
+onlyoffice-sha256-demo-server                      | SERVER_JWT_SECRET secret
+onlyoffice-sha256-demo-server                      | SERVER_HOSTNAME 0.0.0.0
+onlyoffice-sha256-demo-server                      |
+onlyoffice-sha256-demo-server                      | Start with the document.docx.
+onlyoffice-sha256-demo-server                      | 6940 457dc57108e797a7c429f7488ee92f92c627cb972093b6feb13be27fe25f5e27
+onlyoffice-sha256-demo-server                      |
+onlyoffice-sha256-demo-server                      | Start converting the document.docx to the result.docxf.
+onlyoffice-sha256-demo-server                      | POST http://onlyoffice-document-server/ConvertService.ashx {"async":false,"filetype":"docx","key":"document.docx","outputtype":"docxf","title":"result.docxf","url":"http://server:3000/document.docx"}
+onlyoffice-sha256-demo-server                      | {"fileUrl":"http://onlyoffice-document-server/cache/files/data/conv_document.docx_docxf/output.docxf/result.docxf?md5=HjdlhWe11ehl1a_yH1bGoQ&expires=1705479412&filename=result.docxf","fileType":"docxf","percent":100,"endConvert":true}
+onlyoffice-sha256-demo-server                      |
+onlyoffice-sha256-demo-server                      | Start downloading the result.docxf.
+onlyoffice-sha256-demo-server                      | GET http://onlyoffice-document-server/cache/files/data/conv_document.docx_docxf/output.docxf/result.docxf?md5=HjdlhWe11ehl1a_yH1bGoQ&expires=1705479412&filename=result.docxf
+onlyoffice-sha256-demo-server                      | 7982 5985738855e7fa9d8a90426d5118e8fc075f8ca96ac962c8818e63b983350522
+onlyoffice-sha256-demo-server                      |
+onlyoffice-sha256-demo-server                      | Start converting the result.docxf to the result.docx.
+onlyoffice-sha256-demo-server                      | POST http://onlyoffice-document-server/ConvertService.ashx {"async":false,"filetype":"docxf","key":"result.docxf","outputtype":"docx","title":"result.docx","url":"http://server:3000/result.docxf"}
+onlyoffice-sha256-demo-server                      | {"fileUrl":"http://onlyoffice-document-server/cache/files/data/conv_result.docxf_docx/output.docx/result.docx?md5=ierzKn5_fywPvWor1QB5iw&expires=1705479413&filename=result.docx","fileType":"docx","percent":100,"endConvert":true}
+onlyoffice-sha256-demo-server                      |
+onlyoffice-sha256-demo-server                      | Start downloading the result.docx.
+onlyoffice-sha256-demo-server                      | GET http://onlyoffice-document-server/cache/files/data/conv_result.docxf_docx/output.docx/result.docx?md5=ierzKn5_fywPvWor1QB5iw&expires=1705479413&filename=result.docx
+onlyoffice-sha256-demo-server                      | 7982 5985738855e7fa9d8a90426d5118e8fc075f8ca96ac962c8818e63b983350522
+onlyoffice-sha256-demo-server                      |
